@@ -21,7 +21,7 @@ These features of S3 bucket configurations are supported:
 
 ```hcl
 module "s3_bucket" {
-  source = "terraform-aws-modules/s3-bucket/aws"
+  source = "enriquemanuel.scalr.io/env-tp22m4rk1ci4a0o/s3-bucket/aws"
 
   bucket = "my-s3-bucket"
   acl    = "private"
@@ -37,7 +37,7 @@ module "s3_bucket" {
 
 ```hcl
 module "s3_bucket_for_logs" {
-  source = "terraform-aws-modules/s3-bucket/aws"
+  source = "enriquemanuel.scalr.io/env-tp22m4rk1ci4a0o/s3-bucket/aws"
 
   bucket = "my-s3-bucket-for-logs"
   acl    = "log-delivery-write"
@@ -53,7 +53,7 @@ module "s3_bucket_for_logs" {
 
 ```hcl
 module "s3_bucket_for_logs" {
-  source = "terraform-aws-modules/s3-bucket/aws"
+  source = "enriquemanuel.scalr.io/env-tp22m4rk1ci4a0o/s3-bucket/aws"
 
   bucket = "my-s3-bucket-for-logs"
   acl    = "log-delivery-write"
@@ -73,7 +73,7 @@ Sometimes you need to have a way to create S3 resources conditionally but Terraf
 ```hcl
 # This S3 bucket will not be created
 module "s3_bucket" {
-  source = "terraform-aws-modules/s3-bucket/aws"
+  source = "enriquemanuel.scalr.io/env-tp22m4rk1ci4a0o/s3-bucket/aws"
 
   create_bucket = false
   # ... omitted
